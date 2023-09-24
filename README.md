@@ -1,3 +1,51 @@
+# Telecom Customer Churn Prediction with Feedforward Neural Networks
+
+## Overview
+
+The telecommunications industry faces the challenge of customer churn, where customers switch service providers, resulting in revenue loss and reduced profitability. In this project, I leverage the Telecom Customer Churn dataset, a comprehensive collection of customer data, to predict potential customer churn rates using Feedforward Neural Networks (FNN).
+
+## Dataset
+
+The dataset encompasses various factors influencing customer behavior, including demographics, service features, contracts, payment methods, and internet service types.
+
+## Feedforward Neural Networks (FNN)
+
+FNN is an artificial neural network that processes data in one direction. In this project, I construct and train FNN models using TensorFlow and Keras. Here's a breakdown of the key components and terms:
+
+1. **Network Architecture and Hyperparameters:**
+   - I define the FNN's architecture using the `create_fnn_model` function, specifying layers, units, activation functions, and learning rates.
+   - Architectures include single and multiple hidden layers, each with varying neuron counts.
+   - Activation functions ('relu', 'sigmoid', 'tanh') introduce non-linearity.
+   - Different learning rates (0.01, 0.001, 0.0001) affect optimization convergence.
+
+2. **Model Training and Evaluation Loop:**
+   - I iterate over architecture, activation function, and learning rate combinations.
+   - Models are compiled, and data is split into training and validation sets.
+   - Models are trained for 10 epochs, and validation accuracy is recorded.
+   - The best model is selected based on the highest accuracy.
+
+3. **Print Results:**
+   - Model configurations and validation accuracy are printed.
+
+4. **Evaluate the Best Model on the Test Set:**
+   - The best model predicts customer churn on the test set.
+
+5. **Calculate Classification Metrics and Print the Summary:**
+   - Metrics (precision, recall, F1-score, accuracy) are calculated.
+   - Model summaries are printed.
+
+## Classification Metrics
+
+- **Precision:** Measures correctly predicted positive instances.
+- **Recall:** Measures actual positive instances correctly predicted.
+- **F1-Score:** Harmonic mean of precision and recall.
+- **Accuracy:** Measures overall prediction correctness.
+
+## Conclusion
+
+This project aims to predict customer churn, aiding telecom companies in retaining customers and sustaining profitability. The code explores various architectures, activation functions, and learning rates to optimize model performance and provides valuable insights into churn prediction.
+
+
 # House Price and Category Prediction with Multi-Task Deep Learning
 
 ## Overview
